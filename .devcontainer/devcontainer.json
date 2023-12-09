@@ -3,7 +3,7 @@
 
 	"dockerComposeFile": "../docker-compose.yaml",
 	"service": "jupyter",
-	"workspaceFolder": "/home/jovyan/workspace",
+	"workspaceFolder": "/home/jovyan/work",
 	
 	"forwardPorts": [8888],
 
@@ -17,7 +17,8 @@
 			
 			"extensions": [
 				"ms-python.python",
-				"ms-python.vscode-pylance"
+				"ms-python.vscode-pylance",
+				"ms-toolsai.jupyter"
 			]
 		}
 	}

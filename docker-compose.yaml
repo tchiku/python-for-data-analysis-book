@@ -2,13 +2,14 @@ version: "3"
 
 services:
   jupyter:
-    image: jupyter/minimal-notebook:latest
+    image: jupyter/datascience-notebook:latest
     ports:
       - 8888:8888
     environment:
       TZ: Asia/Tokyo
     volumes:
-      - .:/home/jovyan/workspace
+      - jupyter-jovyan:/home/jovyan
+      - .:/home/jovyan/work
 
 volumes:
   jupyter-jovyan:
