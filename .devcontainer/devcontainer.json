@@ -1,0 +1,24 @@
+{
+	"name": "Python for Data Analysis Book",
+
+	"dockerComposeFile": "../docker-compose.yaml",
+	"service": "jupyter",
+	"workspaceFolder": "/home/jovyan/workspace",
+	
+	"forwardPorts": [8888],
+
+	"remoteUser": "jovyan",
+
+	"customizations": {
+		"vscode": {
+			"settings": { 
+				"python.defaultInterpreterPath": "/opt/conda/bin/python"
+			},
+			
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			]
+		}
+	}
+}
